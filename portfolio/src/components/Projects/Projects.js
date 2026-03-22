@@ -13,7 +13,7 @@ function Projects() {
         <div className="projects-grid">
           {portfolioData.projects.map((project) => (
             <div key={project.id} className="project-card">
-              <div className="project-image">{project.image}</div>
+              <div className="project-image">Comming Soon</div>
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>

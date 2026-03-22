@@ -168,10 +168,10 @@
 /* GRADIENT RING */
 
 .profile-ring {
-  padding: 8px;
+  padding: 4px;
   border-radius: 50%;
 
-  background: linear-gradient(45deg,#00c6ff,#7b2ff7);
+  background: linear-gradient(45deg, #c1d8df, #1b063d);
 
   animation: float 5s ease-in-out infinite;
 }

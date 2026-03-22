@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { portfolioData } from "../../data/templateData";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,26 +20,40 @@ function Footer() {
           <div className="footer-section">
             <h3>Follow Me</h3>
             <div className="social-links">
-              <a href={portfolioData.github} target="_blank" rel="noopener noreferrer">
-                GitHub
+              <a href={portfolioData.github} target="_blank" rel="noopener">
+                <FaGithub /> GitHub
               </a>
-              <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer">
-                LinkedIn
+              <a
+                href={portfolioData.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin /> LinkedIn
               </a>
             </div>
           </div>
           <div className="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} {portfolioData.name}. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} {portfolioData.name}. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
